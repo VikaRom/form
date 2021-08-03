@@ -1,7 +1,6 @@
 export const uploadFile = (file) => {
     return new Promise((res, rej) => {
         const fR = new FileReader();
-
         fR.onload = () => {
             res(fR.result)
         }
